@@ -5,12 +5,13 @@ import 'package:dart_asynchronous/models/account.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
 
-class accountService {
+class AccountService {
   final StreamController<String> _streamController = StreamController<String>();
   Stream<String> get streamInfos => _streamController.stream;
   String url = "https://api.github.com/gists/2e6a49b0e6403d1188084e027ec1c975";
 
-  Future<List<dynamic>> gettAll() async {
+  Future<List<Account>> getAll() async {
+    
     Response response = await get(Uri.parse(url));
     _streamController.add("${DateTime.now()} | Requisição Leitura }");
 
@@ -31,8 +32,8 @@ class accountService {
     return listAccounts;
   }
 
-  void addAccount(Account account) async {
-    List<dynamic> listAccounts = await gettAll();
+   addAccount(Account account) async {
+    List<dynamic> listAccounts = await getAll();
     listAccounts.add(account);
     
     List<Map<String,dynamic>> listContent = [];
