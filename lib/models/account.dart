@@ -16,7 +16,8 @@ class Account {
       id: map["id"],
       name: map["name"],
       lastName: map["lastName"],
-      balance: map["balance"],
+      balance: (map['balance'] as num).toDouble(),
+
     );
   }
 
@@ -28,5 +29,23 @@ class Account {
       "lastName" : lastName,
       "balance" : balance,
     };
+  }
+  @override
+  String toString(){
+    return "\n Conta: $id \n Nome: $name $lastName \n Saldo: $balance)";
+  }
+  @override
+  bool operator ==(covariant Account other) {
+    if (identical(this, other)) return true;
+
+    return other.id == id &&
+        other.name == name &&
+        other.lastName == lastName &&
+        other.balance == balance;
+  }
+
+  @override
+  int get hashCode {
+    return id.hashCode ^ name.hashCode ^ lastName.hashCode ^ balance.hashCode;
   }
 }

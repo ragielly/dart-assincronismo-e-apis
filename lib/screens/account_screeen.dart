@@ -20,8 +20,8 @@ class AccountScreeen {
 
     while (isRunning) {
       print("Como eu posso te ajudar? (digite o número desejado)");
-      print("1 - Ver todas sua contas.");
-      print("2 - Adicionar nova conta.");
+      print("1 - 👀 Ver todas sua contas.");
+      print("2 - ➕ Adicionar nova conta.");
       print("3 - Sair\n");
       String? input = stdin.readLineSync();
 
@@ -54,7 +54,7 @@ class AccountScreeen {
       id: "ID555",
       name: "Haley",
       lastName: "Chirívia",
-      balance: 800,
+      balance: 800.0,
     );
 
     await _accountService.addAccount(example);
