@@ -11,9 +11,10 @@ class AccountService {
   Stream<String> get streamInfos => _streamController.stream;
 
 //  String url = "https://api.github.com/gists/413c0aefe6c6abc464581c29029c8ace";
-  String url = "https://api.github.com/gists/da4efbea70bbeb9ab6dc7e647dcba9b5";
+  String url = "https://api.github.com.br/gists/da4efbea70bbeb9ab6dc7e647dcba9b5";
 
   Future<List<Account>> getAll() async {
+    
     Response response = await get(Uri.parse(url));
     _streamController.add("${DateTime.now()} | Requisição de leitura.");
 

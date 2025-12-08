@@ -2,6 +2,8 @@ import 'package:dart_asynchronous/models/account.dart';
 import 'package:dart_asynchronous/services/account_service.dart';
 import 'dart:io';
 
+import 'package:http/http.dart';
+
 class AccountScreeen {
   final AccountService _accountService = AccountService();
 
@@ -45,8 +47,16 @@ class AccountScreeen {
   }
 
   _getAllAccount() async {
-    List<Account> listAccounts = await _accountService.getAll();
-    print(listAccounts);
+    try{
+      List<Account> listAccounts = await _accountService.getAll();
+      print(listAccounts);
+    } on ClientException{
+      print("Não foi possivel conectar com servidor");
+      print("Tente mais tarde");
+    } on Exception{
+      print("Não consegui trazer os dados");
+      print("Tente mais tarde");
+    }
   }
 
   _addExempleAccount() async {
