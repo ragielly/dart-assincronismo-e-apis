@@ -36,14 +36,6 @@ O foco é entender **como o Dart se comporta enquanto aguarda respostas externas
 
 ---
 
-## ⚙️ Como executar
-
-1. Instale o **Dart SDK**:  
-   👉 [https://dart.dev/get-dart](https://dart.dev/get-dart)
-
-2. Verifique se o Dart está instalado:
-   ```bash
-   dart --version
 ## 💻 Tecnologias
 
 Dart
@@ -57,6 +49,5 @@ APIs REST
 
 Desenvolvido por gy 👩‍💻
 Estudando Dart, assincronismo e integração com APIs.
----
 
 <p align="center"> <img src="https://img.shields.io/badge/feito%20com%20💙-por%20gy-blue" alt="Feito com amor por gy"> </p> ```
