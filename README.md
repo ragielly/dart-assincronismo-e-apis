@@ -1,37 +1,62 @@
 # Dart Assincronismo e APIs
+<p align="center">
+  <img src="https://img.shields.io/badge/language-Dart-blue.svg" alt="Linguagem Dart">
+  <img src="https://img.shields.io/badge/version-1.0.0-lightgrey.svg" alt="Versão">
+  <img src="https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow.svg" alt="Status do Projeto">
+</p>
 
-> Projeto em Dart para praticar **assincronismo** e **consumo de APIs** usando Futures, `async`/`await` e requisições HTTP.
-
-Este repositório contém uma aplicação de linha de comando em **Dart** que demonstra como trabalhar com chamadas **assíncronas** e se comunicar com APIs externas de forma prática.
-
----
-
-## 🧠 O que você vai aprender
-
-✔️ Como fazer requisições HTTP em Dart  
-✔️ Uso de `Future`, `async` e `await`  
-✔️ Conversão de JSON para Dart  
-✔️ Tratamento simples de erros em chamadas de API  
-
-Esses conceitos são fundamentais quando trabalhamos com APIs remotas e operações que podem demorar para retornar resultados — algo muito comum no desenvolvimento de aplicações modernas. :contentReference[oaicite:0]{index=0}
+Repositório criado para estudos de **assincronismo em Dart** e **consumo de APIs**, utilizando `Future`, `async/await` e requisições HTTP em projetos simples e didáticos.
 
 ---
 
-## 🚀 Como rodar o projeto
+## 🎯 Objetivo
 
-### Pré-requisitos
-
-Você precisa ter o **Dart SDK** instalado na sua máquina.
-
-Se ainda não tiver, instale pelo site oficial:  
-https://dart.dev/get-dart
+Aprender como o Dart lida com operações assíncronas e comunicação com **APIs externas**, criando uma base sólida para aplicações mais avançadas — incluindo projetos com **Flutter**.
 
 ---
 
-### Rodando no terminal
+## 📘 Conteúdo abordado
 
- Clone o repositório:
+Durante este repositório, estou explorando:
 
-```bash
-git clone https://github.com/ragielly/dart-assincronismo-e-apis.git
+- ⏳ **Assincronismo em Dart**
+  - `Future`
+  - `async` e `await`
+- 🌐 **Consumo de APIs REST**
+- 📥 Requisições **HTTP GET**
+- 🔄 Conversão de **JSON**
+- ⚠️ Tratamento básico de erros
 
+---
+
+## 🧠 Conceitos em prática
+
+Cada arquivo representa um exemplo prático de chamada assíncrona ou consumo de API.  
+O foco é entender **como o Dart se comporta enquanto aguarda respostas externas**, algo essencial em aplicações modernas.
+
+---
+
+## ⚙️ Como executar
+
+1. Instale o **Dart SDK**:  
+   👉 [https://dart.dev/get-dart](https://dart.dev/get-dart)
+
+2. Verifique se o Dart está instalado:
+   ```bash
+   dart --version
+## 💻 Tecnologias
+
+Dart
+
+Pacote http
+
+APIs REST
+
+---
+## ✨ Autora
+
+Desenvolvido por gy 👩‍💻
+Estudando Dart, assincronismo e integração com APIs.
+---
+
+<p align="center"> <img src="https://img.shields.io/badge/feito%20com%20💙-por%20gy-blue" alt="Feito com amor por gy"> </p> ```
